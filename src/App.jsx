@@ -1,6 +1,6 @@
 
 import styles from './App.module.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Landing } from './components/Landing/Landing'
 import { Navbar } from './components/NavBar/Navbar'
 import { About } from './components/About/About'
