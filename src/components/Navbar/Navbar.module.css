@@ -1,0 +1,92 @@
+@import "../../vars.css";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  padding-top: 2.5rem;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.825rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--color-text-hover)
+}
+
+.menu {
+  display:flex;
+}
+
+.menuItems {
+  display:flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1.25rem;
+}
+
+.menuItems a:hover {
+  color: var(--color-text-hover)
+}
+
+.menuBtn {
+  display: none;
+}
+.items {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .825rem;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: .825rem;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      45deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.323);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+}
