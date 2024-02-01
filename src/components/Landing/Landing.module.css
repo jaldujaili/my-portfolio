@@ -5,6 +5,11 @@
 
 
 .container {
+  flex-direction: column;
+  height: 100vh;
+}
+
+.innerContainer {
   position: relative;
   display: flex;
   align-items: center;

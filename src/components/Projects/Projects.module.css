@@ -8,11 +8,11 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 6rem;
+  margin-bottom: 1rem;
 }
-
-.wrapper {
+.container {
+  height: 100%;
 }
-
 .projectsWrapper {
   display:flex;
 }
@@ -112,4 +112,19 @@ p {
 
 .btn:hover {
   background-color: var(--color-text-hover);
+}
+
+@media screen and (max-width: 700px) {
+  .projectsWrapper {
+    flex-direction: column;
+  }
+  article {
+    width: 90%;
+  }
+  p {
+    text-align: center;
+  }
+  .projectsWrapper {
+    padding-left: 50px;
+  };
 }

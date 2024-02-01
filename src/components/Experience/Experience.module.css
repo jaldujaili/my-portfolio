@@ -9,6 +9,11 @@
 
 .container {
   color: var(--color-text);
+  flex-direction: column;
+  height: 83vh;
+}
+
+.innerContainer { 
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
