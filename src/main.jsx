@@ -4,11 +4,11 @@ import App from './App.jsx'
 import './index.css'
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Landing } from './components/Landing/Landing'
-import { About } from './components/About/About'
-import { Experience } from './components/Experience/Experience'
-import { Projects } from './components/Projects/Projects'
-import { Contact } from './components/Contact/Contact'
+import { Landing } from './components/Landing/Landing';
+import { About } from './components/About/About';
+import { Experience } from './components/Experience/Experience';
+import { Projects } from './components/Projects/Projects';
+import { Contact } from './components/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/my-portfolio/",
+        index: true,
         element: <Landing />,
       },
       {
@@ -38,6 +38,7 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
