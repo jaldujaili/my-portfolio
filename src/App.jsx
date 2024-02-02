@@ -12,17 +12,8 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <Router>
         <Navbar/>
-
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
+        <Landing/>
     </div>
   )
 }
